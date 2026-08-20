@@ -1,0 +1,317 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: testTourUpdate.spec.js >> TestTourUpdate.io Scenario
+- Location: testTourUpdate.spec.js:7:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - navigation [ref=e5]:
+        - link [ref=e6] [cursor=pointer]:
+          - /url: /
+          - img [ref=e7]
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link "Our School" [ref=e11] [cursor=pointer]:
+              - /url: /schools/pa/weatherly/weatherly-i
+          - listitem [ref=e12]:
+            - link "Our Teachers" [ref=e13] [cursor=pointer]:
+              - /url: /schools/pa/weatherly/weatherly-i/our-teachers
+          - listitem [ref=e14]:
+            - link "Summer" [ref=e15] [cursor=pointer]:
+              - /url: /schools/pa/weatherly/weatherly-i/our-school/special-programs/summer-camp
+        - link "Learn More & Tour" [ref=e17] [cursor=pointer]:
+          - /url: /schools/pa/weatherly/weatherly-i/our-school/goddard-form
+          - generic [ref=e18]: Learn More & Tour
+    - main [ref=e19]:
+      - generic [ref=e27]:
+        - text: ★★★★★ ★★★★★
+        - generic [ref=e31]:
+          - heading "Select a new date & time" [level=1] [ref=e32]
+          - heading "Weatherly I" [level=2] [ref=e33]
+          - generic [ref=e34]:
+            - generic [ref=e35]:
+              - img [ref=e36]
+              - link "904-482-3333" [ref=e38] [cursor=pointer]:
+                - /url: tel:904-482-3333
+            - generic [ref=e39]:
+              - img [ref=e40]
+              - generic [ref=e42]: Monday-Friday • 6:30 am - 6:30 pm
+          - generic [ref=e43]:
+            - img [ref=e44]
+            - generic [ref=e49]:
+              - text: ★★★★★
+              - generic [ref=e50]: ★★★★★
+            - generic [ref=e51]: "4.7"
+            - generic [ref=e52]: (125 reviews)
+          - generic [ref=e53]:
+            - generic [ref=e60]:
+              - generic [ref=e61]:
+                - generic [ref=e62]:
+                  - heading "Date" [level=3] [ref=e64]
+                  - navigation [ref=e66]:
+                    - button "Previous month" [ref=e67] [cursor=pointer]:
+                      - img [ref=e68]
+                    - list [ref=e71]:
+                      - listitem [ref=e72]:
+                        - link "August" [ref=e73] [cursor=pointer]:
+                          - /url: "#"
+                      - listitem
+                      - listitem
+                      - listitem
+                      - listitem
+                      - listitem
+                      - listitem
+                      - listitem
+                      - listitem
+                      - listitem
+                      - listitem
+                      - listitem
+                    - button "Next month" [ref=e74] [cursor=pointer]:
+                      - img [ref=e75]
+                - grid [ref=e80]:
+                  - rowgroup [ref=e81]:
+                    - row "Sunday Monday Tuesday Wednesday Thursday Friday Saturday" [ref=e85]:
+                      - columnheader "Sunday" [ref=e86]:
+                        - generic "Sunday" [ref=e88]: Sun
+                      - columnheader "Monday" [ref=e89]:
+                        - generic "Monday" [ref=e91]: Mon
+                      - columnheader "Tuesday" [ref=e92]:
+                        - generic "Tuesday" [ref=e94]: Tue
+                      - columnheader "Wednesday" [ref=e95]:
+                        - generic "Wednesday" [ref=e97]: Wed
+                      - columnheader "Thursday" [ref=e98]:
+                        - generic "Thursday" [ref=e100]: Thu
+                      - columnheader "Friday" [ref=e101]:
+                        - generic "Friday" [ref=e103]: Fri
+                      - columnheader "Saturday" [ref=e104]:
+                        - generic "Saturday" [ref=e106]: Sat
+                  - rowgroup [ref=e107]:
+                    - generic [ref=e110]:
+                      - row "July 26, 2026 July 27, 2026 July 28, 2026 July 29, 2026 July 30, 2026 July 31, 2026 August 1, 2026" [ref=e112]:
+                        - gridcell "July 26, 2026" [ref=e113]:
+                          - generic "July 26, 2026" [ref=e116]: "26"
+                        - gridcell "July 27, 2026" [ref=e117]:
+                          - generic "July 27, 2026" [ref=e120]: "27"
+                        - gridcell "July 28, 2026" [ref=e121]:
+                          - generic "July 28, 2026" [ref=e124]: "28"
+                        - gridcell "July 29, 2026" [ref=e125]:
+                          - generic "July 29, 2026" [ref=e128]: "29"
+                        - gridcell "July 30, 2026" [ref=e129]:
+                          - generic "July 30, 2026" [ref=e132]: "30"
+                        - gridcell "July 31, 2026" [ref=e133]:
+                          - generic "July 31, 2026" [ref=e136]: "31"
+                        - gridcell "August 1, 2026" [ref=e137]:
+                          - generic "August 1, 2026" [ref=e140]: "1"
+                      - row "August 2, 2026 August 3, 2026 August 4, 2026 August 5, 2026 August 6, 2026 August 7, 2026 August 8, 2026" [ref=e141]:
+                        - gridcell "August 2, 2026" [ref=e142]:
+                          - generic "August 2, 2026" [ref=e145]: "2"
+                        - gridcell "August 3, 2026" [ref=e146]:
+                          - generic "August 3, 2026" [ref=e149]: "3"
+                        - gridcell "August 4, 2026" [ref=e150]:
+                          - generic "August 4, 2026" [ref=e153]: "4"
+                        - gridcell "August 5, 2026" [ref=e154]:
+                          - generic "August 5, 2026" [ref=e157]: "5"
+                        - gridcell "August 6, 2026" [ref=e158]:
+                          - generic "August 6, 2026" [ref=e161]: "6"
+                        - gridcell "August 7, 2026" [ref=e162]:
+                          - generic "August 7, 2026" [ref=e165]: "7"
+                        - gridcell "August 8, 2026" [ref=e166]:
+                          - generic "August 8, 2026" [ref=e169]: "8"
+                      - row "August 9, 2026 August 10, 2026 August 11, 2026 August 12, 2026 August 13, 2026 August 14, 2026 August 15, 2026" [ref=e170]:
+                        - gridcell "August 9, 2026" [ref=e171]:
+                          - generic "August 9, 2026" [ref=e174]: "9"
+                        - gridcell "August 10, 2026" [ref=e175]:
+                          - generic "August 10, 2026" [ref=e178]: "10"
+                        - gridcell "August 11, 2026" [ref=e179]:
+                          - generic "August 11, 2026" [ref=e182]: "11"
+                        - gridcell "August 12, 2026" [ref=e183]:
+                          - generic "August 12, 2026" [ref=e186]: "12"
+                        - gridcell "August 13, 2026" [ref=e187]:
+                          - generic "August 13, 2026" [ref=e190]: "13"
+                        - gridcell "August 14, 2026" [ref=e191]:
+                          - generic "August 14, 2026" [ref=e194]: "14"
+                        - gridcell "August 15, 2026" [ref=e195]:
+                          - generic "August 15, 2026" [ref=e198]: "15"
+                      - row "August 16, 2026 August 17, 2026 August 18, 2026 August 19, 2026 August 20, 2026 August 21, 2026 August 22, 2026" [ref=e199]:
+                        - gridcell "August 16, 2026" [ref=e200]:
+                          - generic "August 16, 2026" [ref=e203]: "16"
+                        - gridcell "August 17, 2026" [ref=e204]:
+                          - generic "August 17, 2026" [ref=e207]: "17"
+                        - gridcell "August 18, 2026" [ref=e208]:
+                          - generic "August 18, 2026" [ref=e211]: "18"
+                        - gridcell "August 19, 2026" [ref=e212]:
+                          - generic "August 19, 2026" [ref=e215]: "19"
+                        - gridcell "August 20, 2026" [ref=e216]:
+                          - generic "August 20, 2026" [ref=e219]: "20"
+                        - gridcell "August 21, 2026" [ref=e220]:
+                          - generic "August 21, 2026" [ref=e223]: "21"
+                        - gridcell "August 22, 2026" [ref=e224]:
+                          - generic "August 22, 2026" [ref=e227]: "22"
+                      - row "August 23, 2026 August 24, 2026 August 25, 2026 August 26, 2026 August 27, 2026 August 28, 2026 August 29, 2026" [ref=e228]:
+                        - gridcell "August 23, 2026" [ref=e229]:
+                          - generic "August 23, 2026" [ref=e232]: "23"
+                        - gridcell "August 24, 2026" [ref=e233]:
+                          - generic "August 24, 2026" [ref=e236]: "24"
+                        - gridcell "August 25, 2026" [ref=e237] [cursor=pointer]:
+                          - generic "August 25, 2026" [ref=e240]: "25"
+                        - gridcell "August 26, 2026" [ref=e241] [cursor=pointer]:
+                          - generic "August 26, 2026" [ref=e244]: "26"
+                        - gridcell "August 27, 2026" [ref=e245] [cursor=pointer]:
+                          - generic "August 27, 2026" [ref=e248]: "27"
+                        - gridcell "August 28, 2026" [ref=e249] [cursor=pointer]:
+                          - generic "August 28, 2026" [ref=e252]: "28"
+                        - gridcell "August 29, 2026" [ref=e253]:
+                          - generic "August 29, 2026" [ref=e256]: "29"
+                      - row "August 30, 2026 August 31, 2026 September 1, 2026 September 2, 2026 September 3, 2026 September 4, 2026 September 5, 2026" [ref=e257]:
+                        - gridcell "August 30, 2026" [ref=e258]:
+                          - generic "August 30, 2026" [ref=e261]: "30"
+                        - gridcell "August 31, 2026" [ref=e262] [cursor=pointer]:
+                          - generic "August 31, 2026" [ref=e265]: "31"
+                        - gridcell "September 1, 2026" [ref=e266] [cursor=pointer]:
+                          - generic "September 1, 2026" [ref=e269]: "1"
+                        - gridcell "September 2, 2026" [ref=e270] [cursor=pointer]:
+                          - generic "September 2, 2026" [ref=e273]: "2"
+                        - gridcell "September 3, 2026" [ref=e274] [cursor=pointer]:
+                          - generic "September 3, 2026" [ref=e277]: "3"
+                        - gridcell "September 4, 2026" [ref=e278] [cursor=pointer]:
+                          - generic "September 4, 2026" [ref=e281]: "4"
+                        - gridcell "September 5, 2026" [ref=e282]:
+                          - generic "September 5, 2026" [ref=e285]: "5"
+              - generic [ref=e286]:
+                - group "Choose a Date & Time" [ref=e287]:
+                  - generic [ref=e288]: Choose a Date & Time
+                - paragraph [ref=e290]: Tour Times are displayed in Eastern Standard Time. Don’t see a tour time that works for your schedule? Call us at 904-482-3333
+                - generic [ref=e291]:
+                  - heading "Current Tour Time" [level=5] [ref=e292]
+                  - generic [ref=e294]:
+                    - generic [ref=e295]:
+                      - generic [ref=e296]: Tuesday, August 25
+                      - text: 10:00 AM - 11:00 AM
+                    - generic [ref=e297]: In-Person
+                  - heading "Available Tour Times" [level=5] [ref=e298]
+                - list [ref=e299]:
+                  - listitem [ref=e300]: There are no tours available for the selected tour type
+            - generic [ref=e301]:
+              - button "Cancel Tour" [ref=e302] [cursor=pointer]
+              - button "Next" [disabled] [ref=e303]
+        - text: ★★★★★ ★★★★★
+    - generic [ref=e309]:
+      - navigation "Breadcrumb" [ref=e311]:
+        - list [ref=e312]:
+          - listitem [ref=e313]:
+            - link "Home icon School Locator" [ref=e314] [cursor=pointer]:
+              - /url: /school-locator
+              - img "Home icon" [ref=e315]
+              - generic [ref=e316]: School Locator
+          - listitem [ref=e317]:
+            - text: ">"
+            - link "Pennsylvania" [ref=e318] [cursor=pointer]:
+              - /url: /schools/pa
+          - listitem [ref=e319]:
+            - text: ">"
+            - link "Goddard School of Weatherly I" [ref=e320] [cursor=pointer]:
+              - /url: /schools/pa/weatherly/weatherly-i
+          - listitem [ref=e321]:
+            - text: ">"
+            - link "Our School" [ref=e322] [cursor=pointer]:
+              - /url: /schools/pa/weatherly/weatherly-i/our-school
+      - contentinfo [ref=e324]:
+        - heading "Let's Stay in Touch!" [level=2] [ref=e325]
+        - generic [ref=e327]:
+          - generic [ref=e328]: Email Address
+          - textbox "Email Address" [ref=e329]
+          - button "Sign Up" [ref=e330] [cursor=pointer]:
+            - generic [ref=e331]: Sign Up
+        - generic [ref=e332]: By submitting this form, you agree to receive messages from The Goddard School, Goddard Franchisor LLC and its affiliates and/or subsidiaries, including Goddard Systems, LLC.
+        - generic [ref=e333]:
+          - img "The Goddard School logo" [ref=e335]
+          - list [ref=e337]:
+            - listitem [ref=e338]:
+              - link "About Us" [ref=e339] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e340]:
+              - link "Careers at GSL" [ref=e341] [cursor=pointer]:
+                - /url: https://recruiting.ultipro.com/GOD1001GOSY/JobBoard/d9bcba70-21be-405b-a68e-7fb1d8cb196c
+            - listitem [ref=e342]:
+              - link "News" [ref=e343] [cursor=pointer]:
+                - /url: /news
+            - listitem [ref=e344]:
+              - link "School Locations" [ref=e345] [cursor=pointer]:
+                - /url: /locations
+            - listitem [ref=e346]:
+              - link "Goddard Leadership" [ref=e347] [cursor=pointer]:
+                - /url: /executive-leadership
+            - listitem [ref=e348]:
+              - link "Family Connect" [ref=e349] [cursor=pointer]:
+                - /url: https://familyconnect.goddardschool.com/Login.aspx
+            - listitem [ref=e350]:
+              - link "FAQs" [ref=e351] [cursor=pointer]:
+                - /url: /frequently-asked-questions
+            - listitem [ref=e352]:
+              - link "Contact Us" [ref=e353] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=e354]:
+              - link "Sitemap" [ref=e355] [cursor=pointer]:
+                - /url: /sitemap
+            - listitem [ref=e356]:
+              - link "Franchising" [ref=e357] [cursor=pointer]:
+                - /url: http://www.goddardschoolfranchise.com
+            - listitem [ref=e358]:
+              - link "Goddard Goods" [ref=e359] [cursor=pointer]:
+                - /url: https://goddardgoods.com/
+            - listitem [ref=e360]:
+              - link "Tuition Benefits" [ref=e361] [cursor=pointer]:
+                - /url: /tuition-benefits
+          - generic [ref=e362]:
+            - heading "Connect with Us!" [level=3] [ref=e363]
+            - generic [ref=e364]:
+              - link "Facebook" [ref=e365] [cursor=pointer]:
+                - /url: https://www.facebook.com/goddardschool
+                - img "Facebook" [ref=e366]
+              - link "Instagram" [ref=e367] [cursor=pointer]:
+                - /url: https://www.instagram.com/goddard_school/
+                - img "Instagram" [ref=e368]
+              - link "TikTok" [ref=e369] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@thegoddardschool
+                - img "TikTok" [ref=e370]
+              - link "YouTube" [ref=e371] [cursor=pointer]:
+                - /url: https://www.youtube.com/user/goddardschool
+                - img "YouTube" [ref=e372]
+        - button "Back to Top" [ref=e374] [cursor=pointer]:
+          - generic [ref=e375]: Back to Top
+        - list [ref=e376]:
+          - listitem [ref=e377]: © 2025 Goddard Franchisor LLC |
+          - listitem [ref=e378]:
+            - link "Privacy Policy" [ref=e379] [cursor=pointer]:
+              - /url: https://privacy.goddardsystems.com
+            - text: "|"
+          - listitem [ref=e380]:
+            - link "Terms & Conditions" [ref=e381] [cursor=pointer]:
+              - /url: https://privacy.goddardsystems.com/Home/TermsAndConditions
+            - text: "|"
+          - listitem [ref=e382]:
+            - link "Cookie Management" [ref=e383] [cursor=pointer]:
+              - /url: "#OneTrustToggle"
+            - text: "|"
+          - listitem [ref=e384]:
+            - link "Do Not Sell or Share My Personal Information" [ref=e385] [cursor=pointer]:
+              - /url: https://privacy.goddardsystems.com/Form
+  - button "Feedback" [ref=e386] [cursor=pointer]:
+    - generic [ref=e388]: Feedback
+```

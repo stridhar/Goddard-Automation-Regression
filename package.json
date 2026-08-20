@@ -1,0 +1,25 @@
+{
+  "name": "my-playwright-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@faker-js/faker": "^10.5.0",
+    "js-yaml": "^5.2.3",
+    "playwright": "^1.60.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1"
+  },
+"scripts": {
+"tour-tests": "playwright test tests/testLead.spec.js tests/testRetuningLeadTour.spec.js tests/testTour.spec.js tests/testTourUpdate.spec.js --headed --workers=1"
+}
+}

@@ -1,0 +1,49 @@
+lead:
+  BirthDate: "05/30/2022"
+  ChildName: Childtestfirst
+  PreferredStartDate: 2026-07-30
+  ZIPCode: 19005
+  PhoneNumber: 6372828172
+  emaildomain: "@goddardsystems.com"
+child:
+  first_name: autotest1
+  firstName: Jack
+  lastName: Testing
+  last_name: lname
+  dob: "03/04/2022"
+  futuredate: "03/04/2026"
+  pastdate: "01/05/2024"
+  gender: "Male"
+  email: "AutoTest@gmail.com"
+  childNumberOfDaysDesired: "5"
+  deactivationReason: "COVID-19"
+  reason: "Testing"
+  notes: "Testing"
+  classroom: "Fizz 1227"
+  scheduledTemp: "AS - After School"
+  charge: "Junior Kindergarten FD 2 Days Tuition"
+  childTimeRequired: "Full Days"
+
+
+contact:
+  phone: "9901123456"
+  zip: "12345"
+  city: New York
+  referral_method: Internet
+
+search:
+  last_name: lname
+
+leads:
+  nd: "1742991863769"
+  schoolId: "106461376037"
+  page: "1"
+  sord: "asc"
+  rows: "10"
+  search: "false"
+  leadId: "129524392326"
+  sidx: ""
+
+tours:
+  email: aut_Bruce_Rau@pwsqa.com
+  confirmationCode: 20260814-00001
